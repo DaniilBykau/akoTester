@@ -1,0 +1,13 @@
+{
+  "questions": [{
+    "questionText": "Which of the following does TypeScript use to specify types?",
+    "options": "answer1",
+    "explanation": "TS uses a colon (:) to separate the property name from the property type"
+  },
+    {
+      "questionText": "How is a property accessible within a class?",
+      "options": "answer2",
+      "explanation": "this.propertyName is the way to access a specific property within a class"
+    }
+  ]
+}
