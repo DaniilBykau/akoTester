@@ -1,5 +1,6 @@
 {
   "name": "ako-tester",
+  "homepage": "https://daniilbykau.github.io/akoTester/",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
