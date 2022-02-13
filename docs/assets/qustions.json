@@ -1,13 +1,29 @@
 {
-  "questions": [{
-    "questionText": "Which of the following does TypeScript use to specify types?",
-    "options": "answer1",
-    "explanation": "TS uses a colon (:) to separate the property name from the property type"
-  },
+  "questions": [
     {
-      "questionText": "How is a property accessible within a class?",
-      "options": "answer2",
-      "explanation": "this.propertyName is the way to access a specific property within a class"
+      "questionText": "1. Jakie działania należy podjąć aby ewentualne dzielenie przez zero w obliczeniach wykonywanych przez koprocesor nie powodowało wyjątku",
+      "answerText": "Trzeba zmienić rejestr sterujący koprocesora przy pomocy rozkazu FLDCW. W rejestrze stanu\nmożna określać reguły zaokrągleń i właśnie reagowania na działania typu dzielenie przez 0.",
+      "explanation": ""
+    },
+    {
+      "questionText": "2. Architektura harwardzka - wyjaśnij i podaj przykład zastosowania",
+      "answerText": "Rozkazy i dane są przechowywane w osobnych blokach pamięci. Architekturę harwardzką stosuje się przykładowo w pamięciach L1.",
+      "explanation": ""
+    },
+    {
+      "questionText": "3. Kiedy procesor generuje wyjątek nr 6",
+      "answerText": "Procesor generuje wyjątek numer kiedy otrzymuje niezydentyfikowany kod rozkazu.",
+      "explanation": ""
+    },
+    {
+      "questionText": "4. Wyjaśnić znaczenie interfejsu",
+      "answerText": "Interfejs ABI określa standard według którego są wywoływane określone funkcje, sposób przekazania parametrów i wyników. Określa też współprace między bibliotekami i programami oraz sys. op na poziomie binarnym.",
+      "explanation": ""
+    },
+    {
+      "questionText": "5. Podaj zawartość rejestru EIP po wykonaniu instrukcji",
+      "answerText": "mov eax, 789\nxchg eax, [esp]\nret",
+      "explanation": ""
     }
   ]
 }
