@@ -1,0 +1,28 @@
+.questions{
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 10px;
+}
+.questionAko{
+  margin: 10px;
+}
+
+.answerAko{
+  margin: 10px;
+  font-size: large;
+}
+
+.tooltipAko{
+  margin: 10px;
+}
+
+.yourAnswerTextArea{
+  width: 94%;
+  margin: 3%;
+  align-self: center;
+  height: 250px;
+}
+
+.yourAnswerAko{
+  margin: 10px;
+}

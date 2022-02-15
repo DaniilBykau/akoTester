@@ -1,42 +1,46 @@
-<div class="container-fluid py-1">
+<div class="container-fluid py-1 questions">
+
   <div class="card">
     <div class="d-flex justify-content-between p-3">
       <div class="quiz-header">
         <h4>AKO teoria</h4>
-        <span>{{name}}</span>
+        <h5>{{name}}</h5>
       </div>
     </div>
     <div class="d-flex justify-content-between p-3">
-      <div class="score">
-        <h5>Points: </h5>
-      </div>
       <div class="question-remain">
-        <span>Question 1</span>
+        <h5>Question {{questionNumber}}</h5>
       </div>
-      <div class="timer">
-        <h5>1 hour</h5>
-      </div>
-    </div>
-    <div class="question">
-      <div class="card">
-        <h3>{{questionText}} </h3>
+      <div class="score">
+        <h5>{{questionsCorrect}} Correct</h5>
       </div>
     </div>
-    <div class="answer">
-      <div class="card">
-        <h3>{{answerText}} </h3>
-      </div>
+
+    <div class="questionAko">
+      <h4>{{questionText}} </h4>
     </div>
-    <div class="tooltip">
-      <div class="card">
-        <h3>{{tooltipText}} </h3>
-      </div>
+
+    <div class="form-floating yourAnswerInput" [style.display]="isVisibleYourAnswerInput ? 'block' : 'none'">
+      <textarea #myArea class="form-control yourAnswerTextArea " id="idTextareaYourAnswer"></textarea>
     </div>
+
+    <div class="yourAnswerAko" id="idYourAnswer" [style.display]="isVisibleYourAnswerAko ? 'block' : 'none'">
+      <span>{{yourAnswerText}}</span>
+    </div>
+
+    <div class="answerAko" id="idAnswerAko" [style.display]="isVisibleAnswerAko ? 'block' : 'none'">
+      <span>{{answerText}}</span>
+    </div>
+
+    <div class="tooltipAko"  [style.display]="isVisibleTooltipAko ? 'block' : 'none'">
+      <h3>{{tooltipText}} </h3>
+    </div>
+
     <div class="d-flex justify-content-between">
-      <button class="btn">Check</button>
-      <button class="btn"  (click)="findQuestion()">Next</button>
+      <button class="btn btn-secondary btn-lg" (click)="loadAnswer()" style="margin: 10px" [style.display]="isVisibleCheckButton ? 'block' : 'none'">Check</button>
+      <button class="btn btn-secondary btn-lg" (click)="CorrectAnswer()" style="margin: 10px" [style.display]="isVisibleCorrectButton ? 'block' : 'none'">Correct</button>
+      <button class="btn btn-secondary btn-lg" id="nextQuestion" (click)="nextQuestion()" style="margin: 10px" [style.display]="isVisibleNextButton ? 'block' : 'none'">Next</button>
     </div>
   </div>
-
 
 </div>

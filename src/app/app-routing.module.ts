@@ -3,10 +3,12 @@ import { CommonModule } from '@angular/common';
 import {RouterModule, Routes} from "@angular/router";
 import {WelcomeComponent} from "./welcome/welcome.component";
 import {QuestionsComponent} from "./questions/questions.component";
+import {FinishComponent} from "./finish/finish.component";
 
 const routes: Routes = [
   {path:'', redirectTo:'welcome', pathMatch:"full"},
   {path:"welcome", component:WelcomeComponent},
+  {path:"finish", component:FinishComponent},
   {path:"questions", component:QuestionsComponent}
 ];
 
